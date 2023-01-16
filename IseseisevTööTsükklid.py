@@ -1,25 +1,25 @@
 from random import *
 
-#while 1:
-#    try:
-#        mainnumber = int(input("Vali number 1-100:"))
-#        break
-#    except ValueError:
-#        print("See pole täisarv")
-#if mainnumber<1 or mainnumber>100:
-#    print("Vali õige number")
-#else:
-#    paaris = 0 
-#    paaritu = 0 
-#    for x in range(mainnumber):
-#        print(int(x), end=" ")
-#        if x % 2 == 0:
-#             paaris += 1
-#        else:
-#             paaritu += 1
-#        x = x // 10
-#    print("Paaris numbrid:", paaris)
-#    print("Paaritu numbrid:", paaritu)
+while 1:
+    try:
+        mainnumber = int(input("Vali number 1-100:"))
+        break
+    except ValueError:
+        print("See pole täisarv")
+if mainnumber<1 or mainnumber>100:
+    print("Vali õige number")
+else:
+    paaris = 0 
+    paaritu = 0 
+    for x in range(1,mainnumber+1):
+        print(int(x), end=" ")
+        if x % 2 == 0:
+             paaris += 1
+        else:
+             paaritu += 1
+        x = x // 10
+    print("Paaris numbrid:", paaris)
+    print("Paaritu numbrid:", paaritu)
 
 #while 1:
 #    try:
@@ -33,21 +33,56 @@ from random import *
 #    paaris = 0 
 #    paaritu = 0 
 #    x = 0
-#    while x!=mainnumber:    
+#    while True:    
 #        print(int(x), end=" ")
-#        if x % 2 == 0:
-#             paaris += 1
-#             x = x // 10
-#             x +=1
+#        if x<mainnumber:
+            
+#            if mainnumber % 2 == 0:
+#                 paaris += 1
+#                 mainnumber = mainnumber // 10
+#                 x += 1
+#            else:
+#                paaritu += 1
+#                mainnumber = mainnumber // 10
+#                x += 1
 #        else:
-#             paaritu += 1
-#             x = x // 10
-#             x +=1
+#            break
+        
+             
+    
 
-#    print("Paaris numbrid:", paaris)
-#    print("Paaritu numbrid:", paaritu)
+#print("Paaris numbrid:", paaris)
+#print("Paaritu numbrid:", paaritu)
 
 
+
+#mainnumber = input("Vali number 1-100:")
+#while mainnumber.isdigit()==False or int(mainnumber)>100 or int(mainnumber)<1:
+#    mainnumber = input("Vale! Vali number 1-100:")
+#paaris = 0 
+#paaritu = 0 
+#x = 0
+#mainnumber=int(mainnumber)
+#while True:    
+#    print(int(x), end=" ")
+#    if x<mainnumber:
+            
+#        if mainnumber % 2 == 0:
+#                paaris += 1
+#                mainnumber = mainnumber // 10
+#                x += 1
+#        else:
+#            paaritu += 1
+#            mainnumber = mainnumber // 10
+#            x += 1
+#    else:
+#        break
+        
+             
+    
+
+print("Paaris numbrid:", paaris)
+print("Paaritu numbrid:", paaritu)
 
 
 
